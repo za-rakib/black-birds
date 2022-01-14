@@ -1,0 +1,14 @@
+.header_component {
+  .top-header {
+    svg {
+        color: $primary;
+        margin-right: 6px;
+    }
+  }
+}
+.middle-header{
+    .brand-logo{
+        width: 100%;
+        max-width: 200px;
+    }
+}
