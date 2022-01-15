@@ -14,6 +14,7 @@ import logo from '../../assets/image/logo3.png';
 const Header = () => {
   return (
     <div className="header_component">
+      {/* top header */}
       <div className="top-header py-2 bg-light border-bottom">
         <Container className="d-flex align-items-center justify-content-between">
           <ul className="list-unstyled d-flex gap-4 align-items-center">
@@ -32,10 +33,10 @@ const Header = () => {
           </div>
         </Container>
       </div>
-
+      {/* middle header */}
       <div className="middle-header">
         <Container>
-          <div className="d-flex align-items-center py-2">
+          <div className="d-flex align-items-center py-3 gap-5">
             <img className="brand-logo" src={logo} alt="" />
             <InputGroup>
               <FormControl
@@ -48,7 +49,7 @@ const Header = () => {
                 <BiSearch className="text-white" />
               </Button>
             </InputGroup>
-            <ul className="icon-list list-unstyled ">
+            <ul className="icon-list list-unstyled d-flex gap-3">
               <li>
                 <BsBagCheck />
               </li>
@@ -59,11 +60,13 @@ const Header = () => {
           </div>
         </Container>
       </div>
-
-      <Navbar bg="primary" variant="dark">
+      {/* Navbar */}
+      <Navbar bg="dark" variant="dark">
         <Container>
-          <Nav className="me-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
+          <Navbar.Brand>Categories</Navbar.Brand>
+          <Nav className="ms-auto">
+            <Nav.Link href="/home">News feed</Nav.Link>
+            <Nav.Link href="/merchant">Merchant Zone</Nav.Link>
             <Nav.Link href="/help">Help</Nav.Link>
           </Nav>
         </Container>
